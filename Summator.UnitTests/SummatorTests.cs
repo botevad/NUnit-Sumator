@@ -62,7 +62,7 @@ namespace Summator.UnitTests
         {
             var nums = new[] { -0, 0 };
             var actual = Summator.Sum(nums);
-            var expected = -0;
+            var expected = -0; 
             Assert.AreEqual(expected, actual);
         }
 
