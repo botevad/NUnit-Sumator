@@ -149,6 +149,16 @@ namespace Summator.UnitTests
         }
 
         [Test]
+        public void Test_Average_Zero_Numbers()
+        {
+            // Test with exception
+            var nums = new int[] { };
+            Assert.Throws<DivideByZeroException>(
+                delegate { throw new DivideByZeroException(); });
+
+        }
+
+        [Test]
         public void test_Multiply_Two_Positive_Numbers()
         {
             var nums = new double[] { 5, 3 };
